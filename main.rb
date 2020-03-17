@@ -16,7 +16,7 @@ class Square
   end
 
   def to_s
-    [self.x, self.y].to_s
+    %w(a b c d e f g h)[@x] + %w(1 2 3 4 5 6 7 8)[@y] if valid?
   end
 
   def generate_moves
